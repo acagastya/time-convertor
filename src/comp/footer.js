@@ -6,7 +6,7 @@ function Footer() {
     <footer className="mt-5 w-100" style={{ bottom: 0, position: 'absolute' }}>
       <hr />
       <div className="page-footer text-center">
-        <h5>
+        <h5 aria-level="5">
           Copyright &copy; {year}{' '}
           <a href="https://en.wikinews.org/wiki/User:Acagastya">acagastya</a>.
           This project is licensed under{' '}
