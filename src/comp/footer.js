@@ -8,9 +8,19 @@ function Footer() {
       <div className="page-footer text-center">
         <h5 aria-level="5">
           Copyright &copy; {year}{' '}
-          <a href="https://en.wikinews.org/wiki/User:Acagastya">acagastya</a>.
-          This project is licensed under{' '}
-          <a href="https://opensource.org/licenses/BSD-3-Clause">
+          <a
+            href="https://en.wikinews.org/wiki/User:Acagastya"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            acagastya
+          </a>
+          . This project is licensed under{' '}
+          <a
+            href="https://opensource.org/licenses/BSD-3-Clause"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             BSD-3-Clause license
           </a>
           .

@@ -51,15 +51,13 @@ function AutoCompleteText({ defaultValue = '', changeValue }) {
         style={{ maxHeight: '50vh', overflow: 'scroll' }}
       >
         <h6 aria-level="6">
-          <ul className="list-group" role="list">
+          <ul className="list-group">
             {suggestions.length > 0
               ? suggestions.map((el, i) => (
                   <li
                     className="list-group-item list-group-item-action"
                     key={i}
                     onClick={() => handleClick(el)}
-                    role="listitem"
-                    // style={{ paddingLeft: 0 }}
                   >
                     {el.replace(/_/g, ' ')}
                   </li>
