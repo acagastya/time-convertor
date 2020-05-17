@@ -1,6 +1,14 @@
+const dotenv = require('dotenv');
 const express = require('express');
-const server = expres();
-const PORT = process.env.port || 8080;
+const path = require('path');
+
+const envPath = path.join(__dirname, '.env');
+dotenv.config({
+  path: envPath,
+});
+
+const server = express();
+const PORT = process.env.PORT || 8080;
 
 server.get('/', function (req, res) {
   res.send('Hello from server');
@@ -11,7 +19,7 @@ server.get('/:from/:to', function (req, res) {
   res.send(`From: ${from} To: ${to}`);
 });
 
-function listen(port) {
+function listening(port) {
   console.log(`Server is now running on port ${port}...`);
 }
 
