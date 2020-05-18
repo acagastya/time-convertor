@@ -1,12 +1,12 @@
 import React from 'react';
 import { Route, BrowserRouter as Router, Switch } from 'react-router-dom';
 
+import CurrentTime from './comp/currentTime';
 import Footer from './comp/footer';
-import FromTo from './subpages/fromTo';
-import Future from './subpages/future';
+import FromToTime from './comp/fromToTime';
+import Future from './comp/future';
 import Header from './comp/header';
-import Help from './subpages/help';
-import Main from './subpages/main';
+import Help from './comp/help';
 
 function App() {
   return (
@@ -22,9 +22,9 @@ function App() {
         <Header />
         <Switch>
           <Route component={Help} path="/help" />
-          <Route component={FromTo} path="/from-to" />
+          <Route component={FromToTime} path="/from-to" />
           <Route component={Future} path="/future" />
-          <Route component={Main} path="/" />
+          <Route component={CurrentTime} path="/" />
         </Switch>
         <Footer />
       </div>
