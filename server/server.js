@@ -18,21 +18,13 @@ server.get('/help', function (req, res) {
   res.send('This is a help page.');
 });
 
-server.get('/:to', function (req, res) {
-  const { to } = req.params;
-  res.send(`To: ${to}`);
+server.get('/from-to', function (req, res) {
+  res.send('This is a from-to page.');
 });
 
-server.get('/:from/:to', function (req, res) {
+server.get('/future', function (req, res) {
   const { from, to } = req.params;
   res.send(`From: ${from} To: ${to}`);
-});
-
-server.get('/:from/:fromDate/:to/:toDate', function (req, res) {
-  const { from, fromDate, to, toDate } = req.params;
-  res.send(
-    `From: ${from}\nFrom Date: ${fromDate}\nTo: ${to}\nTo Date${toDate}`
-  );
 });
 
 function listening(port) {
