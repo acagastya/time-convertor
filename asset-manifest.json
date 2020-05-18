@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.js": "/acagastya.github.io/time-zones/static/js/main.6bb8bf9e.chunk.js",
+    "main.js.map": "/acagastya.github.io/time-zones/static/js/main.6bb8bf9e.chunk.js.map",
+    "runtime-main.js": "/acagastya.github.io/time-zones/static/js/runtime-main.0f03f38b.js",
+    "runtime-main.js.map": "/acagastya.github.io/time-zones/static/js/runtime-main.0f03f38b.js.map",
+    "static/js/2.7c760314.chunk.js": "/acagastya.github.io/time-zones/static/js/2.7c760314.chunk.js",
+    "static/js/2.7c760314.chunk.js.map": "/acagastya.github.io/time-zones/static/js/2.7c760314.chunk.js.map",
+    "index.html": "/acagastya.github.io/time-zones/index.html",
+    "precache-manifest.6b1c132b37b3c90c7ada6e19c7b6d237.js": "/acagastya.github.io/time-zones/precache-manifest.6b1c132b37b3c90c7ada6e19c7b6d237.js",
+    "service-worker.js": "/acagastya.github.io/time-zones/service-worker.js",
+    "static/js/2.7c760314.chunk.js.LICENSE.txt": "/acagastya.github.io/time-zones/static/js/2.7c760314.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.0f03f38b.js",
+    "static/js/2.7c760314.chunk.js",
+    "static/js/main.6bb8bf9e.chunk.js"
+  ]
+}
