@@ -21,7 +21,7 @@ function AutoCompleteText({ defaultValue = '', changeValue }) {
           val.toLowerCase().includes(input.toLowerCase())
         ),
       ];
-    } else recommendations = [...suggestions];
+    }
     setSuggestions(Array.from(new Set([...recommendations])));
   }
 
