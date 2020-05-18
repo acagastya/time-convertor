@@ -4,6 +4,7 @@ import moment from 'moment-timezone';
 function AutoCompleteText({
   autofocus = false,
   changeValue,
+  clearInput,
   defaultValue = '',
   id,
   placeholder,
@@ -18,6 +19,7 @@ function AutoCompleteText({
   );
   function handleChange(event) {
     const { value: input } = event.target;
+    if (clearInput) clearInput(undefined);
     setInputVal(input);
     let recommendations = [];
     if (input.length) {
