@@ -16,7 +16,7 @@ function useTime() {
 
 function CurrentTime() {
   const now = useTime();
-  const [TZ, setTZ] = React.useState('America/New_York');
+  const [TZ, setTZ] = React.useState('UTC');
   const ISOtime = now.toISOString();
   const tz = moment.tz.guess();
   const localTZ = tz.replace(/_/g, ' ');
@@ -27,9 +27,9 @@ function CurrentTime() {
     <div className="time-conversion">
       <div className="row mb-3" id="labels">
         <div className="col text-right" id="local-time-lbl-box">
-          <h2 aria-level="2" id="local-time-lbl">
+          <h4 aria-level="4" id="local-time-lbl">
             Local time ({localTZ})
-          </h2>
+          </h4>
         </div>
         <div className="col" id="converted-time-lbl-box">
           <AutoCompleteText defaultValue={TZ} changeValue={setTZ} />
