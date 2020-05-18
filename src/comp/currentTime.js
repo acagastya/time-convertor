@@ -12,6 +12,14 @@ function CurrentTime() {
   );
   return (
     <div className="time-conversion">
+      <div className="row mb-3" id="fromto">
+        <div className="col text-right" id="labels-from">
+          <h1>From</h1>
+        </div>
+        <div className="col text-left" id="labels-to">
+          <h1>To</h1>
+        </div>
+      </div>
       <div className="row mb-3" id="labels">
         <div className="col text-right" id="local-time-lbl-box">
           <h4 aria-level="4" id="local-time-lbl">

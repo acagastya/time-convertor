@@ -3,12 +3,9 @@ import React from 'react';
 function Footer() {
   const year = new Date().getFullYear();
   return (
-    <footer
-      className="mt-5 w-100"
-      style={{ bottom: 0, left: 0, position: 'fixed' }}
-    >
-      <hr />
-      <div className="page-footer text-center" style={{ padding: '5px' }}>
+    <footer className="w-100" style={{ bottom: 0, left: 0, position: 'fixed' }}>
+      <hr style={{ marginTop: 0 }} />
+      <div className="page-footer text-center" style={{ paddingBottom: '5px' }}>
         Copyright &copy; {year}{' '}
         <a
           href="https://en.wikinews.org/wiki/User:Acagastya"

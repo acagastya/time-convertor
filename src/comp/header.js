@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 function Header() {
   return (
-    <nav className="navbar navbar-expand-lg navbar-dark bg-danger mb-5">
+    <nav className="navbar navbar-expand-lg navbar-dark bg-danger mb-4">
       <Link className="navbar-brand" to="/">
         <span role="img" aria-label="time convertor">
           {new Date().getSeconds() % 2 ? '⏳' : '⌛️'}

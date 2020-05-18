@@ -16,6 +16,14 @@ function FromToTime() {
   );
   return (
     <div className="time-conversion">
+      <div className="row mb-3" id="fromto">
+        <div className="col text-right" id="labels-from">
+          <h1>From</h1>
+        </div>
+        <div className="col text-left" id="labels-to">
+          <h1>To</h1>
+        </div>
+      </div>
       <div className="row mb-3" id="labels">
         <div className="col text-right" id="first-time-lbl-box">
           <AutoCompleteText
