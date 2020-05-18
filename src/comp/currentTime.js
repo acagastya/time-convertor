@@ -20,6 +20,7 @@ function CurrentTime() {
         </div>
         <div className="col" id="converted-time-lbl-box">
           <AutoCompleteText
+            autofocus={true}
             changeValue={setTZ2}
             defaultValue={TZ2}
             id="converted-time-lbl-input"

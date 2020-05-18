@@ -19,6 +19,7 @@ function FromToTime() {
       <div className="row mb-3" id="labels">
         <div className="col text-right" id="first-time-lbl-box">
           <AutoCompleteText
+            autofocus={true}
             changeValue={setTZ1}
             defaultValue={TZ1}
             id="first-time-lbl-input"
