@@ -1,7 +1,13 @@
 import React from 'react';
 import moment from 'moment-timezone';
 
-function AutoCompleteText({ changeValue, defaultValue = '', id, placeholder }) {
+function AutoCompleteText({
+  autofocus = false,
+  changeValue,
+  defaultValue = '',
+  id,
+  placeholder,
+}) {
   const options = moment.tz
     .names()
     .sort()
@@ -35,7 +41,7 @@ function AutoCompleteText({ changeValue, defaultValue = '', id, placeholder }) {
     <h4 aria-level="4" id="converted-time-lbl">
       <input
         role="searchbox"
-        autoFocus
+        autoFocus={autofocus}
         className="w-75"
         id={id}
         name="converted-time-lbl-input"
