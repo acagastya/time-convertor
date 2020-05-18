@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.js": "/time-convertor/static/js/main.65c29cf3.chunk.js",
-    "main.js.map": "/time-convertor/static/js/main.65c29cf3.chunk.js.map",
+    "main.js": "/time-convertor/static/js/main.544ba330.chunk.js",
+    "main.js.map": "/time-convertor/static/js/main.544ba330.chunk.js.map",
     "runtime-main.js": "/time-convertor/static/js/runtime-main.9228e111.js",
     "runtime-main.js.map": "/time-convertor/static/js/runtime-main.9228e111.js.map",
     "static/js/2.7c760314.chunk.js": "/time-convertor/static/js/2.7c760314.chunk.js",
     "static/js/2.7c760314.chunk.js.map": "/time-convertor/static/js/2.7c760314.chunk.js.map",
     "index.html": "/time-convertor/index.html",
-    "precache-manifest.76f0214657afd866061e70244a6e12c5.js": "/time-convertor/precache-manifest.76f0214657afd866061e70244a6e12c5.js",
+    "precache-manifest.d998038c655041ca7310114c62f6a279.js": "/time-convertor/precache-manifest.d998038c655041ca7310114c62f6a279.js",
     "service-worker.js": "/time-convertor/service-worker.js",
     "static/js/2.7c760314.chunk.js.LICENSE.txt": "/time-convertor/static/js/2.7c760314.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.9228e111.js",
     "static/js/2.7c760314.chunk.js",
-    "static/js/main.65c29cf3.chunk.js"
+    "static/js/main.544ba330.chunk.js"
   ]
 }
