@@ -21,7 +21,7 @@ function AutoCompleteText({ defaultValue = '', changeValue }) {
           val.toLowerCase().includes(input.toLowerCase())
         ),
       ];
-    }
+    } else recommendations = [...suggestions];
     setSuggestions(Array.from(new Set([...recommendations])));
   }
 
@@ -32,7 +32,7 @@ function AutoCompleteText({ defaultValue = '', changeValue }) {
   }
 
   return (
-    <h2 aria-level="2" id="converted-time-lbl">
+    <h4 aria-level="4" id="converted-time-lbl">
       <input
         role="searchbox"
         autoFocus
@@ -66,7 +66,7 @@ function AutoCompleteText({ defaultValue = '', changeValue }) {
           </ul>
         </h6>
       </div>
-    </h2>
+    </h4>
   );
 }
 
