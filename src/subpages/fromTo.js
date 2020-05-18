@@ -1,5 +1,7 @@
 import React from 'react';
 
+import FromToTime from '../comp/fromToTime';
+
 import Footer from '../comp/footer';
 import Header from '../comp/header';
 
@@ -10,7 +12,7 @@ function FromTo() {
       style={{ maxWidth: '100vw', overflow: 'hidden', padding: 0 }}
     >
       <Header />
-      from-to
+      <FromToTime />
       <Footer />
     </div>
   );
