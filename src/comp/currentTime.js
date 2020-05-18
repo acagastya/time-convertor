@@ -5,10 +5,10 @@ import useTime from './helpers/useTime';
 import prepData from './helpers/prepData';
 
 function CurrentTime() {
-  const [TZ, setTZ] = React.useState('UTC');
+  const [TZ2, setTZ2] = React.useState('UTC');
   const { firstAbbr, fmtTime1, fmtTime2, firstTZ, secondAbbr } = prepData(
     useTime(),
-    TZ
+    TZ2
   );
   return (
     <div className="time-conversion">
@@ -19,7 +19,12 @@ function CurrentTime() {
           </h4>
         </div>
         <div className="col" id="converted-time-lbl-box">
-          <AutoCompleteText defaultValue={TZ} changeValue={setTZ} />
+          <AutoCompleteText
+            changeValue={setTZ2}
+            defaultValue={TZ2}
+            id="converted-time-lbl-input"
+            placeholder="Time zone"
+          />
         </div>
       </div>
       <div className="row" id="times">
