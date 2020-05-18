@@ -11,7 +11,7 @@ function CurrentTime() {
     TZ2
   );
   return (
-    <div className="time-conversion">
+    <div className="time-conversion container" style={{ minHeight: '75vh' }}>
       <div className="row mb-3" id="fromto">
         <div className="col text-right" id="labels-from">
           <h1>From</h1>
