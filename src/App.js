@@ -1,6 +1,5 @@
 import React from 'react';
 import { Route, BrowserRouter as Router, Switch } from 'react-router-dom';
-import 'bootstrap/dist/css/bootstrap.min.css';
 
 import FromTo from './subpages/fromTo';
 import Future from './subpages/future';
