@@ -9,7 +9,7 @@ function Header() {
           🌐
         </span>
       </Link>
-      {/* <button
+      <button
         className="navbar-toggler"
         type="button"
         data-toggle="collapse"
@@ -19,7 +19,7 @@ function Header() {
         aria-label="Toggle navigation"
       >
         <span className="navbar-toggler-icon"></span>
-      </button> */}
+      </button>
       <div className="collapse navbar-collapse" id="navbarNav">
         <ul className="navbar-nav">
           <li className="nav-item">
@@ -40,6 +40,34 @@ function Header() {
         </ul>
       </div>
     </nav>
+  );
+}
+
+function Header1() {
+  return (
+    <div className="dropdown">
+      <button
+        className="btn btn-secondary dropdown-toggle"
+        type="button"
+        id="dropdownMenuButton"
+        data-toggle="dropdown"
+        aria-haspopup="true"
+        aria-expanded="false"
+      >
+        Dropdown button
+      </button>
+      <div className="dropdown-menu" aria-labelledby="dropdownMenuButton">
+        <a className="dropdown-item" href="#">
+          Action
+        </a>
+        <a className="dropdown-item" href="#">
+          Another action
+        </a>
+        <a className="dropdown-item" href="#">
+          Something else here
+        </a>
+      </div>
+    </div>
   );
 }
 
