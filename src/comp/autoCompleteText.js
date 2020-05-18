@@ -48,7 +48,13 @@ function AutoCompleteText({ defaultValue = '', changeValue }) {
       />
       <div
         id="suggestion-list"
-        style={{ maxHeight: '50vh', overflow: 'scroll' }}
+        style={{
+          maxHeight: '50vh',
+          overflow: 'scroll',
+          position: 'fixed',
+          zIndex: 2,
+          WebkitOverflowScrolling: 'touch',
+        }}
       >
         <h6 aria-level="6">
           <ul className="list-group">
