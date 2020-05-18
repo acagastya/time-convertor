@@ -11,9 +11,9 @@ function prepData(time, TZ2, TZ1 = '') {
   let fmtTime2 = now.tz(TZ2).format('HH:mm:ss MMM DD, YYYY');
   return {
     firstAbbr,
+    firstTZ,
     fmtTime1,
     fmtTime2,
-    firstTZ,
     secondAbbr,
   };
 }
