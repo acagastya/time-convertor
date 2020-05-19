@@ -9,6 +9,7 @@ import Header from './comp/header';
 import Help from './comp/help';
 
 function App() {
+  const basePath = process.env.PUBLIC_URL;
   return (
     <Router>
       <div
@@ -21,10 +22,10 @@ function App() {
       >
         <Header />
         <Switch>
-          <Route component={Help} path="/help" />
-          <Route component={FromToTime} path="/from-to" />
-          <Route component={Future} path="/future" />
-          <Route component={CurrentTime} path="/" />
+          <Route component={Help} path={`${basePath}/help`} />
+          <Route component={FromToTime} path={`${basePath}/from-to`} />
+          <Route component={Future} path={`${basePath}/future`} />
+          <Route component={CurrentTime} path={`${basePath}/`} />
         </Switch>
         <Footer />
       </div>

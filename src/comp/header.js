@@ -2,9 +2,10 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 function Header() {
+  const basePath = process.env.PUBLIC_URL;
   return (
     <nav className="navbar navbar-expand-lg navbar-dark bg-danger mb-4">
-      <Link className="navbar-brand" to="/">
+      <Link className="navbar-brand" to={`${basePath}/`}>
         <span role="img" aria-label="time convertor">
           {new Date().getSeconds() % 2 ? '⏳' : '⌛️'}
         </span>{' '}
@@ -24,17 +25,17 @@ function Header() {
       <div className="collapse navbar-collapse" id="navbarNav">
         <ul className="navbar-nav">
           <li className="nav-item">
-            <Link className="nav-link" to="/help">
+            <Link className="nav-link" to={`${basePath}/help`}>
               Help
             </Link>
           </li>
           <li className="nav-item">
-            <Link className="nav-link" to="/future">
+            <Link className="nav-link" to={`${basePath}/future`}>
               Future
             </Link>
           </li>
           <li className="nav-item">
-            <Link className="nav-link" to="/from-to">
+            <Link className="nav-link" to={`${basePath}/from-to`}>
               From-to
             </Link>
           </li>

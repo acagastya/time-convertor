@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import moment from 'moment-timezone';
 
 function Help() {
+  const basePath = process.env.PUBLIC_URL;
   const tz = moment.tz.guess();
   const tzAbbr = moment.tz.zone(tz).abbr(moment());
   return (
@@ -11,7 +12,7 @@ function Help() {
         <li>
           Use the{' '}
           <Link
-            to="/"
+            to={`${basePath}/`}
             style={{
               background: 'lavender',
               borderRadius: '5px',
@@ -26,7 +27,7 @@ function Help() {
         <li>
           Use the{' '}
           <Link
-            to="/future"
+            to={`${basePath}/future`}
             style={{
               background: 'lavender',
               borderRadius: '5px',
@@ -41,7 +42,7 @@ function Help() {
         <li>
           Use the{' '}
           <Link
-            to="/from-to"
+            to={`${basePath}/from-to`}
             style={{
               background: 'lavender',
               borderRadius: '5px',
