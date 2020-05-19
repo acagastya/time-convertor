@@ -27,8 +27,9 @@
     "react-scripts": "3.4.1"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "rm -rf build && react-scripts build",
+    "start": "serve -l $PORT -s build",
+    "s": "react-scripts start",
+    "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "deploy": "yarn build && gh-pages -d build"
@@ -49,6 +50,7 @@
     ]
   },
   "devDependencies": {
-    "gh-pages": "^2.2.0"
+    "gh-pages": "^2.2.0",
+    "serve": "^11.3.0"
   }
 }
