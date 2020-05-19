@@ -1,6 +1,20 @@
 {
   "name": "time-zones",
-  "version": "0.1.0",
+  "homepage": "/time-convertor",
+  "author": {
+    "email": "acagastya@outlook.com",
+    "name": "Agastya",
+    "url": "http://hanabi.in"
+  },
+  "bugs": {
+    "email": "acagastya@outlook.com",
+    "url": "https://github.com/acagastya/time-convertor/issues"
+  },
+  "license": "BSD-3-Clause",
+  "repository": {
+    "url": "https://github.com/acagastya/time-convertor"
+  },
+  "version": "1.0.0",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
@@ -14,9 +28,10 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "rm -rf build && react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "deploy": "yarn build && gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -32,5 +47,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^2.2.0"
   }
 }
