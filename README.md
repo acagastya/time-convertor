@@ -1,3 +1,8 @@
+# Note
+This project is archived.  Please use [time-convertor-ts](https://github.com/acagastya/time-convertor-ds) instead, which is implemented in TypeScript and has newer features.
+
+---
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
